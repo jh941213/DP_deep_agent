@@ -1,0 +1,20 @@
+[project]
+name = "shopping-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ag-ui-langgraph>=0.0.23",
+    "deepagents>=0.3.6",
+    "fastapi>=0.128.0",
+    "httpx>=0.28.1",
+    "langchain>=1.2.4",
+    "langchain-google-genai>=4.2.0",
+    "langgraph>=1.0.6",
+    "pydantic>=2.12.5",
+    "pytest>=9.0.2",
+    "pytest-asyncio>=1.3.0",
+    "python-dotenv>=1.2.1",
+    "uvicorn>=0.40.0",
+]
