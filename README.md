@@ -1,6 +1,7 @@
-# 직구 에이전트 (Direct Purchase Agent)
-
 [**English Version (영어 버전)**](./README_EN.md)
+
+
+# 직구 에이전트 (Direct Purchase Agent)
 
 **직구 에이전트 (DPAGENT)** 는 사용자의 쇼핑 의도를 파악하여 Kith, Monos, Everlane, Allbirds 등 해외 유명 쇼핑몰에서 상품을 검색하고, 재고를 확인하며, **Google UCP (Universal Commerce Protocol)** 를 통해 결제까지 지원하는 프리미엄 AI 에이전트 서비스입니다.
 
