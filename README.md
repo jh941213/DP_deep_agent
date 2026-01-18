@@ -65,6 +65,25 @@ graph TD
 
 ---
 
+## 🧠 Deep Agent 아키텍처 (Deep Agent Architecture)
+
+이 프로젝트의 핵심은 단순한 챗봇이 아닌, **'스스로 생각하고 행동하는' Deep Agent** 기술에 있습니다. `shopping_agent/agents/store_agent.py`는 `deepagents` 라이브러리를 기반으로 설계되었습니다.
+
+### 1. 추론 및 계획 (Reasoning & Planning)
+- **TodoListMiddleware**: 모든 에이전트는 작업을 시작하기 전 `write_todos`를 통해 스스로 계획을 수립합니다.
+- **Agentic Loop**: 계획 수립 -> 도구 실행 -> 결과 관찰 -> 계획 수정의 루프를 독자적인 추론 엔진을 통해 수행합니다.
+
+### 2. 미들웨어 아키텍처 (Middleware Pattern)
+- **`ShoppingToolsMiddleware`**: 검색, 재고 확인, 관세 계산 등 쇼핑에 특화된 도구들을 에이전트의 사고 과정에 유기적으로 결합합니다.
+- 확장이 용이한 구조로, 새로운 쇼핑몰이나 기능을 미들웨어 형태로 즉시 추가할 수 있습니다.
+
+### 3. 영구적 기억 및 상태 관리 (Persistent Memory)
+- **CompositeBackend**: 에이전트의 상태를 다중 계층으로 관리합니다.
+  - **StateBackend**: 현재 대화의 실시간 상태 관리.
+  - **FilesystemBackend**: `.memories/` 디렉토리를 통해 사용자의 취향이나 이전 이력을 영구적으로 저장하고 참조합니다.
+
+---
+
 ## ⚙️ 상세 워크플로우 메커니즘 (Detailed Workflow Mechanism)
 
 이 프로젝트는 **Backend (LangGraph)**와 **Frontend (ag-ui)**가 유기적으로 연결되어 동작합니다.
