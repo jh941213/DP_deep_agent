@@ -1,6 +1,6 @@
-# Direct Purchase Agent (DPAGENT)
-
 [**한국어 버전 (Korean Version)**](./README.md)
+
+# Direct Purchase Agent (DPAGENT)
 
 **Direct Purchase Agent (DPAGENT)** is a premium AI agent service that understands user shopping intent, searches for products on famous international malls like Kith, Monos, Everlane, and Allbirds, checks real-time inventory, and supports seamless checkout via **Google UCP (Universal Commerce Protocol)**.
 
